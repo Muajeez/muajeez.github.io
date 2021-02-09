@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/fullPage.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 
 </head>
 
@@ -18,32 +20,32 @@
 <body>
     <header>
         <div class="header-top clearfix">
-            <ul class="flex-nav d-none d-sm-block">
-                <li class="d-none d-sm-block" data-menuanchor="firstSection">
-                    <a href="#secondSection"> Projects </a>
-                </li>
-                <li class="d-none d-sm-block" data-menuanchor="firstSection">
-                    <a href="#thirdSection"> About </a>
-                </li>
-                <li data-menuanchor="firstSection" style="padding: 10px 0px;">
+            <div class="lg-screens d-none d-sm-block">
+                <ul class="flex-nav">
+                    <li class="d-none d-sm-block" data-menuanchor="firstSection">
+                        <a href="#secondSection"> Projects </a>
+                    </li>
+                    <li class="d-none d-sm-block" data-menuanchor="firstSection">
+                        <a href="#thirdSection"> About </a>
+                    </li>
+                    <li data-menuanchor="firstSection" style="padding: 10px 0px;">
+                        <a href="#firstSection">
+                            <img class="logo-af" src="img/Logo.svg" />
+                        </a>
+                    </li>
+                    <li class="d-none d-sm-block" data-menuanchor="firstSection">
+                        <a href="#secondSection"> Extras </a>
+                    </li>
+                    <li class="d-none d-sm-block" data-menuanchor="firstSection">
+                        <a href="#thirdSection"> Contact </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-block d-sm-none">
+                <div class="mob-header">
                     <a href="#firstSection">
                         <img class="logo-af" src="img/Logo.svg" />
                     </a>
-                </li>
-                <li class="d-none d-sm-block" data-menuanchor="firstSection">
-                    <a href="#secondSection"> Extras </a>
-                </li>
-                <li class="d-none d-sm-block" data-menuanchor="firstSection">
-                    <a href="#thirdSection"> Contact </a>
-                </li>
-            </ul>
-            <div class="mob-header">
-                <div>
-                    <a href="#firstSection">
-                        <img class="logo-af" src="img/Logo.svg" />
-                    </a>
-                </div>
-                <div>
                     <a href="#thirdSection"> Contact </a>
                 </div>
             </div>
@@ -148,22 +150,23 @@
         </section>
         <section class="vertical-scrolling" type="projects">
             <div class="container-fluid xces">
-                <div class="tab-content xces">
-                    <div class="tab-pane active" id="tabs-1">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
                         <div class="row">
-                            <div class="col-sm-6 col-12 d-none d-sm-block text-left">
+                            <div class="col-sm-6 col-12  text-left  d-none d-sm-block">
                                 <div class="row">
-                                    <div class="col-lg-6">
+                                    <div class="col-sm-6 col-12">
                                         <img class="projects-img" src="img/project-a.jpg" />
                                     </div>
-                                    <div class="col-lg-6">
+                                    <div class="col-sm-6 col-12">
                                         <img class="projects-img-sm" src="img/project-a.jpg" />
                                         <img class="projects-img-sm" src="img/project-a.jpg" />
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-5 col-12 text-left">
+                            <div class="col-sm-6 col-12 text-left">
                                 <div class="proj-left">
+                                    <img class="projects-img d-block d-sm-none" src="img/project-a.jpg" />
                                     <h2 class="mb-3">BoxBlack International</h2>
                                     <p class="mb-5">I would be delighted to work with you, in parallel to my studies, on exciting freelance missions. Being eager to learn, I love analyzing, observing, questioning, debating, testing, iterating, understanding, sharing
                                         and creating!
@@ -174,9 +177,9 @@
                                 </div>
                             </div>
                         </div>
+                        <h4 class="next-slide">Next Project</h4>
                     </div>
-
-                    <div class="tab-pane" id="tabs-2">
+                    <div class="item">
                         <div class="row">
                             <div class="col-sm-6 col-12 d-none d-sm-block text-left">
                                 <div class="row">
@@ -191,6 +194,8 @@
                             </div>
                             <div class="col-sm-5 col-12 text-left">
                                 <div class="proj-left">
+                                    <img class="projects-img d-block d-sm-none" src="img/project-a.jpg" />
+
                                     <h2 class="mb-3">Hexatral Design</h2>
                                     <p class="mb-5">I would be delighted to work with you, in parallel to my studies, on exciting freelance missions. Being eager to learn, I love analyzing, observing, questioning, debating, testing, iterating, understanding, sharing
                                         and creating!
@@ -201,8 +206,9 @@
                                 </div>
                             </div>
                         </div>
+                        <h4 class="next-slide owl-next">Next Project</h4>
                     </div>
-                    <div class="tab-pane" id="tabs-3">
+                    <div class="item">
                         <div class="row">
                             <div class="col-sm-6 col-12 d-none d-sm-block text-left">
                                 <div class="row">
@@ -216,6 +222,8 @@
                                 </div>
                             </div>
                             <div class="col-sm-5 col-12 text-left">
+                                <img class="projects-img d-block d-sm-none" src="img/project-a.jpg" />
+
                                 <div class="proj-left">
                                     <h2 class="mb-3">Komathi Silks</h2>
                                     <p class="mb-5">I would be delighted to work with you, in parallel to my studies, on exciting freelance missions. Being eager to learn, I love analyzing, observing, questioning, debating, testing, iterating, understanding, sharing
@@ -227,8 +235,9 @@
                                 </div>
                             </div>
                         </div>
+                        <h4 class="next-slide owl-next">Next Project</h4>
                     </div>
-                    <div class="tab-pane" id="tabs-4">
+                    <div class="item">
                         <div class="row">
                             <div class="col-sm-6 col-12 d-none d-sm-block text-left">
                                 <div class="row">
@@ -242,6 +251,8 @@
                                 </div>
                             </div>
                             <div class="col-sm-5 col-12 text-left">
+                                <img class="projects-img d-block d-sm-none" src="img/project-a.jpg" />
+
                                 <div class="proj-left">
                                     <h2 class="mb-3">GRT Builders</h2>
                                     <p class="mb-5">I would be delighted to work with you, in parallel to my studies, on exciting freelance missions. Being eager to learn, I love analyzing, observing, questioning, debating, testing, iterating, understanding, sharing
@@ -253,23 +264,10 @@
                                 </div>
                             </div>
                         </div>
+                        <h4 class="next-slide owl-next">Next Project</h4>
                     </div>
                 </div>
             </div>
-            <ul class="nav nav-pills myspc no-gutters" role="tablist">
-                <li class="col-lg-3 nav-item">
-                    <a href="#tabs-1" class="nav-link mc active" data-toggle="pill"> Box Black International</a>
-                </li>
-                <li class="col-lg-3 nav-item">
-                    <a href="#tabs-2 " class="nav-link mc " data-toggle="pill">Hexatral Design</a>
-                </li>
-                <li class="col-lg-3 nav-item">
-                    <a href="#tabs-3" class="nav-link mc" data-toggle="pill">Komathi Silks</a>
-                </li>
-                <li class="col-lg-3 nav-item">
-                    <a href="#tabs-4" class="nav-link mc" data-toggle="pill">Grt Builders</a>
-                </li>
-            </ul>
         </section>
         <section class="vertical-scrolling" type="about me">
             <div class="container-fluid xces">
@@ -277,14 +275,14 @@
                     <div class="col-sm-6 col-12 text-left">
                         <div class="xces">
                             <h3 class="pb-3">Beyond conventional interaction patterns</h3>
-                            <p class="pb-1">
+                            <p class="pb-1 paragrphs">
                                 I’m Johny Vino, an energetic designer who combines rapid prototyping, interaction, motion, and visual design to transform thorny problems into elegant solutions.
                             </p>
-                            <p class="pb-1">My work goes beyond conventional interaction patterns and visual styles. I specialize in consumer products that distill complex data into simple and beautiful visualizations. With my extensive experience working in tandem with
+                            <p class="pb-5  paragrphs">My work goes beyond conventional interaction patterns and visual styles. I specialize in consumer products that distill complex data into simple and beautiful visualizations. With my extensive experience working in tandem with
                                 engineers, executives, and marketing teams, I know how to ensure user needs are aligned with business goals.</p>
 
-                            <h4 class="pb-3">How volleyball made me a better designer</h4>
-                            <p>Playing volleyball twice a day for 8 years taught me how to make intentional decisions in complicated situations. I had to work as a team, regularly iterate through practice and understand the psychology of fellow players under
+                            <h4 class="pb-3 sm-titless">How volleyball made me a better designer</h4>
+                            <p class="paragrphs">Playing volleyball twice a day for 8 years taught me how to make intentional decisions in complicated situations. I had to work as a team, regularly iterate through practice and understand the psychology of fellow players under
                                 intense, competitive conditions. These valuable lessons I learned on the volleyball court have carried over to the digital design work I do today.</p>
                         </div>
 
@@ -300,10 +298,10 @@
                 <div class="row text-left">
                     <div class="col-lg-6 col-12">
                         <div class="xces">
-                            <div class="h2">
-                                Let's build something together
+                            <div class="md-titless pb-3">
+                                <Strong> Let's build something together</Strong>
                             </div>
-                            <p>
+                            <p class="paragrphs">
                                 My work goes beyond conventional interaction patterns and visual styles. I specialize in consumer products that distill complex data into simple and beautiful visualizations. With my extensive experience.
                             </p>
 
@@ -314,31 +312,39 @@
                     <div class="col-lg-6 col-12">
                         <div class="xces">
                             <div class="service-selections">
-                                <h4 class="pb-3">Select your services</h4>
-                                <ul class="category-listing ">
-                                    <li>UI/UX Design</li>
-                                    <li>Front-end Development</li>
-                                    <li>Branding</li>
-                                    <li>Mobile App design</li>
-                                    <li>Wordpress/Wix website design</li>
-                                </ul>
-                                <div class="form-group">
-                                    <label for="usr">Name:</label>
-                                    <input type="text" class="form-control" id="usr">
-                                </div>
-                                <div class="form-group">
-                                    <label for="usr">Email:</label>
-                                    <input type="text" class="form-control" id="usr">
-                                </div>
-                                <div class="form-group">
-                                    <label for="comment">Project Description:</label>
-                                    <textarea class="form-control" rows="3" id="comment"></textarea>
-                                </div>
-                                <div class="btn btn-primary btn-md">
-                                    Submit
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="social-boc linkedin">
+                                            <div class="fs-14"><i class="fa fa-linkedin fa-white"></i> LinkedIN</div>
+                                            <p class="fs-12 text-dim mb-0">Work Experience</p>
+                                        </div>
+                                        <div class="social-boc dribbble">
+                                            <div class="fs-14"><i class="fa fa-dribbble fa-white"></i> Dribbble</div>
+                                            <p class="fs-12 text-dim mb-0">Latest Designs</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="social-boc instagram">
+                                            <div class="fs-14"><i class="fa fa-instagram fa-white"></i> Instagram</div>
+                                            <p class="fs-12 text-dim mb-0">What I'm up to</p>
+                                        </div>
+                                        <div class="social-boc twitter">
+                                            <div class="fs-14"><i class="fa fa-twitter fa-white"></i> Twitter</div>
+                                            <p class="fs-12 text-dim mb-0">Random Thoughts</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="social-boc btn-primary text-center">
+                                            <div class="fs-14">Email</div>
+                                            <p class="fs-12 text-dim mb-0">You are Classic</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <footer>
+
+                        </footer>
                     </div>
                 </div>
             </div>
@@ -349,12 +355,36 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js "></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+
     <script src="js/app.js "></script>
     <script>
         $(function() {
             $("#tabs ").tabs();
         });
+
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            dots: false,
+            nav: true,
+            navText: ["<i class = 'fa fa-chevron-left fa-fw fa-2x'></i>", "<i class = 'fa fa-chevron-right fa-fw fa-2x'></i>"],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
     </script>
+
+    <i class='fa fa-chevron-left fa-fw fa-lg'></i>
+    <i class="fa fa-chevron-right fa-fw fa-lg "></i>
 </body>
 
 </html>
